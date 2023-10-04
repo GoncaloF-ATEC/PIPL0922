@@ -55,7 +55,33 @@ else:
 
 print("fora do else")
 
-if soma6 % 2 == 0:
-    pass
+"""
 
-print("pos empty block")
+10 / 2  = 5
+
+
+10 / 3 =  3  sobra  1
+
+(3 *  3) + 1 = 10
+
+10 / 4 = 2 sobra 2
+
+4 * 2 = 8 
+
+10 - 8 = 2 
+
+
+10 / 3 = 3
+
+10 % 3 = 1
+
+
+"""
+
+if soma6 % 2 == 0:
+    print(f"{soma6} é par")
+else:
+    print(f"{soma6} é ímapar")
+
+
+i.__ceil__()
