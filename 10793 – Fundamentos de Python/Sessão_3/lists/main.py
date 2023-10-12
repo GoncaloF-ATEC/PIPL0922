@@ -54,6 +54,27 @@ print(media.__round__(0))
 # Peça ao utilizador notas e adicione as validas a uma lista,
 # quando o utilizador adicionar -1 termine a lista e mostre o seu conteudo
 
+# print(not True and not False)
+
+lista_notas = []
+
+while True:
+    nota = input("nova nota: ")
+
+    if nota.__eq__("-1"):
+        break
+
+    if not bool(nota) or not nota.isnumeric():
+        continue
+
+    nota = float(nota)
+
+    if 0 < nota < 20:
+        lista_notas.append(nota)
+    else:
+        print("nota invalida")
+
+print(lista_notas)
 
 
 
