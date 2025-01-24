@@ -11,9 +11,14 @@
 
         <nav>
 
-            <a href="/index">Home</a>
+            <a href="{{ url_for("index") }}">Home</a>
             |
             <a href="{{ url_for("infos") }}">Infos</a>
+            |
+            <a href="{{ url_for("addAluno") }}">Adicionar Aluno</a>
+              |
+            <a href="{{ url_for("listaAlunos") }}">Lista de Alunos</a>
+
 
         </nav>
 

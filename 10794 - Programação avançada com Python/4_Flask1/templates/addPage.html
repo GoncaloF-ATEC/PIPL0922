@@ -1,0 +1,15 @@
+{% extends "template_base.html" %}
+
+
+{% block content %}
+
+    <form method="POST" action="{{ url_for("addAluno")  }}">
+        <input type="text" placeholder="nome:" id="nome" name="nome"/>
+        <br />
+        <input type="text" placeholder="numero:" id="numero" name="numero" />
+        <br />
+        <input type="submit" value="Registar Aluno">
+
+    </form>
+
+{% endblock %}
