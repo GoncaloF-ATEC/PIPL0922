@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block titulo %} Titulo pre definido{% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for("static", filename="estilos.css") }}">
+
+    </head>
+
+    <body>
+
+        <nav>
+
+            <a href="/index">Home</a>
+            |
+            <a href="{{ url_for("infos") }}">Infos</a>
+
+        </nav>
+
+        <main>
+
+            {% block content %}
+                <h1>Sem Conteudo</h1>
+            {% endblock %}
+
+        </main>
+    </body>
+</html>
